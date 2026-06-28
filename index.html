@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catching Event July 7, 2026</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #121214;
+      color: #e2e8f0;
+      font-family: Segoe UI, Tahoma, sans-serif;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #1a1a1e;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #2d2d34;
+      text-align: center;
+    }
+
+    /* --- SMALL BANNER (landscape gif, compact) --- */
+    .banner {
+      margin-bottom: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      line-height: 0;
+      background: #0b0b0e;
+      border: 1px solid #2d2d34;
+      max-height: 120px;        /* ← keeps banner short */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;        /* ensures the gif fills the area nicely */
+      image-rendering: auto;
+      max-height: 120px;        /* matches container max-height */
+    }
+
+    h1, h2 {
+      color: #ffcb05;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: #4dad5b;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .details {
+      background: #232329;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      border: 1px solid #2d2d34;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background: #2d2d34;
+      color: #ffcb05;
+    }
+
+    img {
+      width: 72px;
+      height: 72px;
+      image-rendering: pixelated;
+    }
+
+    .formula {
+      background: #232329;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #60a5fa;
+      text-align: center;
+    }
+
+    .positive {
+      color: #4dad5b;
+      font-weight: bold;
+    }
+
+    .negative {
+      color: #ef4444;
+      font-weight: bold;
+    }
+
+    .note {
+      color: #a0aec0;
+      text-align: center;
+    }
+
+    ul {
+      list-style-position: inside;
+      padding: 0;
+      line-height: 1.8;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+
+      table,
+      thead,
+      tbody,
+      tr,
+      th,
+      td {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        border: 1px solid #2d2d34;
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      td {
+        border: none;
+        text-align: center;
+      }
+
+      td:before {
+        display: block;
+        font-weight: bold;
+        color: #ffcb05;
+        margin-bottom: 5px;
+      }
+
+      tr td:nth-child(1):before {
+        content: "";
+      }
+
+      tr td:nth-child(2):before {
+        content: "Eligible Pokémon";
+      }
+
+      tr td:nth-child(3):before {
+        content: "Nature Modifier";
+      }
+    }
+
+    /* small extra: ensure banner doesn't stretch awkwardly */
+    .banner {
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- ★ SMALL LANDSCAPE GIF BANNER – compact, at the very top -->
+    <div class="banner">
+      <img 
+        src="kanto.gif" 
+        alt="Safari landscape animation"
+        loading="lazy"
+      >
+    </div>
+
+    <!-- original content starts here -->
+    <div class="details">
+      <p><b>📅 Date:</b> July 7, 2026</p>
+      <p><b>⏰ Time:</b> 10pm</p>
+      <p><b>📍 Location:</b> Kanto Safari Zone, Fuchsia City Ch. 1</p>
+    </div>
+
+    <h2>🎁 Event Prizes</h2>
+    <p>🏆 <b>1st Place:</b> 1,000,000 Yen</p>
+    <p>🥈 <b>2nd Place:</b> 500,000 Yen</p>
+
+    <h2>📋 Valid List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Pokemon</th>
+          <th>Eligible Pokémon</th>
+          <th>Nature Modifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="https://play.pokemonshowdown.com/sprites/ani/scyther.gif" alt="Scyther"></td>
+          <td><b>Scyther</b></td>
+          <td>
+            <span class="positive">+5: Adamant / Jolly</span><br>
+            <span class="negative">-5: Modest / Timid</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="https://play.pokemonshowdown.com/sprites/ani/nidoranm.gif" alt="Nidoran M"></td>
+          <td><b>Nidoran♂</b></td>
+          <td>
+            <span class="positive">+5: Adamant / Jolly</span><br>
+            <span class="negative">-5: Modest / Timid</span>
+          </td>
+        </tr>
+        <tr>
+          <td><img src="https://play.pokemonshowdown.com/sprites/ani/exeggcute.gif" alt="Exeggcute"></td>
+          <td><b>Exeggcute</b></td>
+          <td>
+            <span class="positive">+5: Modest / Quiet</span><br>
+            <span class="negative">-5: Jolly / Naive</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>📊 Scoring System</h2>
+    <div class="formula">
+      Total Score = (Sum of all 6 IVs) + Nature Modifier
+    </div>
+    <p class="note">
+      <em>
+        Example: 102 IVs + Beneficial Nature = 107 points. 102 IVs + Hindering Nature = 97 points. All other natures = 0.
+      </em>
+    </p>
+
+    <h2>🚫 Event Rules</h2>
+    <ul>
+      <li>OT Rule: Pokémon must be caught by you during the event.</li>
+      <li>One Submission: Only your highest scoring Pokémon may be submitted.</li>
+    </ul>
+
+  </div>
+
+</body>
+</html>
